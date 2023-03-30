@@ -47,4 +47,41 @@ $dark:          $gray-900;
 
 @import "../complement/bootstrap/scss/bootstrap.scss";
 
+.container{
+    width: 540px !important;
+}
+.form-control{
+    border: none !important;
+    border-bottom: 1px solid rgba(222,0,255,1) !important;
+    background-color: #f8f9fa !important;
+    border-radius: 0 !important;
+}
 
+.btn{
+    width: 100%;
+}
+
+#alternatives img{
+    width: 30px !important;
+    cursor: pointer;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#alternatives p a, #alternatives p {
+    text-decoration: none;
+    cursor: pointer;
+}
+.form-footer{
+    margin-top: 20px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #f8f9fa;
+    border-radius: 1rem;
+}
+
+.form-footer p{
+    margin: auto;
+}

@@ -13,90 +13,67 @@
             crossorigin="anonymous">
     </head>
     <body>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">Navbar</a>
-                <button class="navbar-toggler" type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse"
-                    id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page"
-                                href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#"
-                                id="navbarDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Dropdown
-                            </a>
-                            <ul class="dropdown-menu"
-                                aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another
-                                        action</a></li>
-                                <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="#">Something
-                                        else here</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link disabled" href="#" tabindex="-1"
-                                aria-disabled="true">Disabled</a>
-                        </li>
-                    </ul>
-                    <form class="d-flex">
-                        <input class="form-control me-2" type="search"
-                            placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
-                </div>
+        <div class="container m-auto mt-5">
+            <div class="text-center">
+                <img  src="img/logo.png" class="img-fluid"
+                    alt="" width="150px">
+                <br><br><br>
+                <h1 class="m-5">Iniciar Sesion</h1>
             </div>
-        </nav>
-        <div class="container m-5 d-flex justify-content-center">
-            <form class="">
-                <div class="text-center">
-                    <img  src="img/logo.png" class="img-fluid"
-                        alt="" width="300px">
-                    <br><br><br>
-                    <h1>Inciar Sesion</h1>
-                </div>
+            <form class="bg-light p-5 rounded-4">
                 <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Email
-                        address</label>
-                    <input type="email" class="form-control"
+                    <label for="exampleInputEmail1" class="form-label">Correo Electronico:</label>
+                    <div class="position-relative">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="bi bi-person-circle position-absolute mt-2 ms-2" viewBox="0 0 16 16">
+                            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                            <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                        </svg>
+                        <input type="email" class="form-control ps-5"
                         id="exampleInputEmail1" aria-describedby="emailHelp">
-                    <div id="emailHelp" class="form-text">We'll never share your
-                        email with anyone else.</div>
+                    </div>
                 </div>
                 <div class="mb-3">
-                    <label for="exampleInputPassword1" class="form-label">Password</label>
-                    <input type="password" class="form-control"
+                    <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                    <div class="position-relative">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="bi bi-key-fill position-absolute mt-2 ms-2" viewBox="0 0 16 16">
+                            <path d="M3.5 11.5a3.5 3.5 0 1 1 3.163-5H14L15.5 8 14 9.5l-1-1-1 1-1-1-1 1-1-1-1 1H6.663a3.5 3.5 0 0 1-3.163 2zM2.5 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+                        </svg>
+                        <input type="password" class="form-control ps-5"
                         id="exampleInputPassword1">
+                    </div>
+                    
                 </div>
-                <div class="mb-3 form-check">
-                    <input type="checkbox" class="form-check-input"
+                <div class="mb-3 form-check d-flex justify-content-between">
+                    <div>
+                        <input type="checkbox" class="form-check-input me-3"
                         id="exampleCheck1">
-                    <label class="form-check-label" for="exampleCheck1">Check me
-                        out</label>
+                        <label class="form-check-label" for="exampleCheck1">Recuerdame</label>
+                    </div>
+                    
+                    <a href="#">¿Olvido su cotraseña?</a>
                 </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
+                
+                <button type="submit" class="btn btn-primary ">Enviar</button>
+                <hr>
+                <div id="alternatives" class="d-flex justify-content-center">
+                    <img src="img/facebook.png" class="img-fluid" alt="">
+                    <img src="img/GitHub.png" class="img-fluid" alt="">
+                    <img src="img/google.png" class="img-fluid" alt="">
+                </div>
             </form>
+            <div class="form-footer">
+                <p>¿Nuevo? Crear <a href="#">una cuenta</a></p>
+            </div>
+            <div id="alternatives" class="d-flex justify-content-around mt-5">
+                <p><a href="#">Terminos</a></p>
+                <p><a href="#">Privacidad</a></p>
+                <p><a href="#">Seguridad</a></p>
+                <p>Ayuda</p>
+            </div>
         </div>
 
-        <div class=""></div>
         <script src="complement/bootstrap/dist/js/bootstrap.min.js"></script>
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
             crossorigin="anonymous"></script>
     </body>
